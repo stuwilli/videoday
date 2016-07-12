@@ -8,7 +8,7 @@ var babelify = require('babelify');
 var exec = require('child_process').exec;
 
 gulp.task('img:copy', function () {
-  return gulp.src('./lib/img/*')
+  return gulp.src('./src/img/*')
     .pipe(rename({
       dirname: ''
     }))
@@ -17,7 +17,7 @@ gulp.task('img:copy', function () {
 
 gulp.task('js:compile', function () {
   return browserify({
-      entries:'./lib/js/main.js',
+      entries:'./src/js/main.js',
       transforms: [
         babelify.configure({
           presets: ['es2015']
@@ -29,14 +29,14 @@ gulp.task('js:compile', function () {
       gutil.log(err);
       this.emit('end');
     })
-    .pipe(source('./lib/js/main.js'))
+    .pipe(source('./src/js/main.js'))
     .pipe(buffer())
     .pipe(rename('main.js'))
     .pipe(gulp.dest('./static/js'));
 });
 
 gulp.task('dev', ['img:copy', 'js:compile'], function () {
-  gulp.watch('./lib/js/**/*.js', ['js:compile']);
+  gulp.watch('./src/js/**/*.js', ['js:compile']);
   exec('npm run serve', function (err, stdout, stderr) {
     if (err) {
       console.error(`exec error: ${err}`);
