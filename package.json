@@ -1,8 +1,8 @@
 {
-  "name": "video-poc",
+  "name": "videoday",
   "version": "1.0.0",
-  "description": "POC using Video.js with Freewheel ads",
-  "repository": "",
+  "description": "Demonstration using Video.js with Freewheel ads",
+  "repository": "https://github.com/derekpeterson/videoday",
   "readme": "README.md",
   "main": "index.js",
   "scripts": {
