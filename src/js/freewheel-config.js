@@ -2,12 +2,14 @@ const defaultConfig = {
   networkId: 169843,
   serverUrl: 'http://29773.v.fwmrm.net/ad/p/1',
   siteSectionCustomId: 'today_canonical_video',
+  siteSectionFallbackId: '884196',
   temporalSlots: [{
     adUnit: 'preroll',
     id: 'Preroll_1',
     timePosition: 0
   }],
   videoAssetCustomId: 'tdy_sterns_amazon_160712',
+  videoAssetFallbackId: '90320017',
   videoAssetDuration: 235
 };
 
