@@ -2,7 +2,7 @@
   "name": "videoday",
   "version": "1.0.0",
   "description": "Demonstration using Video.js with Freewheel ads",
-  "repository": "https://github.com/derekpeterson/videoday",
+  "repository": "https://github.com/stuwilli/videoday",
   "readme": "README.md",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "serve": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Derek Peterson <derekpetey@gmail.com>",
+  "author": "someone",
   "license": "ISC",
   "dependencies": {
     "babel": "^6.5.2",
