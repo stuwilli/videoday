@@ -1,5 +1,5 @@
 const defaultConfig = {
-  networkId: 169843,
+  networkId: 506191,
   serverUrl: 'http://7b94f.v.fwmrm.net/ad/p/1',
   siteSectionCustomId: 'TEST_SSID',
   siteSectionFallbackId: '884196',
